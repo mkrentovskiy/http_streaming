@@ -1,0 +1,2 @@
+#!/bin/bash
+./configure --enable-gpl --enable-nonfree --enable-postproc --enable-pthreads --enable-libfaac --enable-libmp3lame --enable-libvorbis --enable-libx264 --enable-libxvid
