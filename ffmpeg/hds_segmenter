@@ -1,0 +1,2 @@
+#!/bin/bash
+ffmpeg -y -i $1 -map 0 -codec:v copy -codec:a copy -codec:s copy -f segment -segment_time 10 -segment_list $2 -segment_format mp4 $2%08d

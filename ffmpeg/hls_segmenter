@@ -1,0 +1,2 @@
+#!/bin/bash
+ffmpeg -y -i $1 -map 0 -codec:v copy -codec:a copy -codec:s copy -vbsf h264_mp4toannexb -f segment -segment_time 10 -segment_list $2.m3u8 -segment_format mpegts $2%08d.ts 
