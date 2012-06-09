@@ -1,7 +1,9 @@
 http_streaming
 ==============
 
-HTTP video streaming platform based on nginx.1. Add nginx repo
+HTTP video streaming platform based on nginx.
+
+1. Add nginx repo
 
     cd /etc/apt
     wget http://nginx.org/keys/nginx_signing.key
@@ -16,9 +18,7 @@ HTTP video streaming platform based on nginx.1. Add nginx repo
     apt-get source nginx
     git clone https://github.com/DevImpress/nginx_h264_streaming.git
     git clone https://github.com/DevImpress/OpenHttpStreamer.git
-
     (Replace debian/rules with this repository's file)
-
     apt-get -b source nginx
     dpkg -i nginx_*.deb
 
